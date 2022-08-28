@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Garry's Guitars</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header
+      id="header"
+      class="page-padding flex row md:col justify-between w-100 text-center"
+    >
+      <div id="header-container" class="flex">
+        <img
+          src="https://dl.dropboxusercontent.com/s/h6k7gc61zzd4j8s/guitar-solid.svg"
+          id="header-img"
+        />
+        <span id="header-text">Garry's Guitars</span>
+      </div>
+      <nav id="nav-bar" class="flex md:gap-1 gap-4 row md:col">
+        <a href="#hero" class="nav-link">Features</a>
+        <a href="#features" class="nav-link">How It Works</a>
+        <a href="#order" class="nav-link">Order</a>
+      </nav>
+    </header>
+    <main>
+      <section id="hero" class="flex col justify-center align-center text-dark">
+        <div class="hero-background w-100 h-100"></div>
+        <div class="hero-overlay w-100 h-100"></div>
+        <div class="hero-container flex col gap-1">
+          <h1 class="text-center">Handcrafted, home-made masterpieces</h1>
+          <form
+            class="flex col align-center gap-1"
+            id="form"
+            action="https://www.freecodecamp.com/email-submit"
+          >
+            <input
+              name="email"
+              type="email"
+              id="email"
+              placeholder="Enter your email address"
+            />
+            <input
+              class="button"
+              id="submit"
+              type="submit"
+              value="GET STARTED"
+            />
+          </form>
+        </div>
+      </section>
+      <section id="features" class="flex col">
+        <div class="features-section flex sm:col align-center sm:text-center">
+          <div class="features-icon-container flex justify-center align-center">
+            <i class="fa-solid fa-fire-flame-curved features-icon"></i>
+          </div>
+          <div class="features-text flex col justify-center">
+            <h2>Premium Materials</h2>
+            <p>
+              Our trombones use the shiniest brass which is sourced locally.
+              This will increase the longevity of your purchase.
+            </p>
+          </div>
+        </div>
+        <div class="features-section flex sm:col align-center sm:text-center">
+          <div class="features-icon-container flex justify-center align-center">
+            <i class="fa-solid fa-truck features-icon"></i>
+          </div>
+          <div class="features-text flex col justify-center">
+            <h2>Fast Shipping</h2>
+            <p>
+              We make sure you recieve your trombone as soon as we have finished
+              making it. We also provide free returns if you are not satisfied.
+            </p>
+          </div>
+        </div>
+        <div class="features-section flex sm:col align-center sm:text-center">
+          <div class="features-icon-container flex justify-center align-center">
+            <i class="fa-solid fa-battery-full features-icon"></i>
+          </div>
+          <div class="features-text flex col justify-center">
+            <h2>Quality Assurance</h2>
+            <p>
+              For every purchase you make, we will ensure there are no damages
+              or faults and we will check and test the pitch of your instrument.
+            </p>
+          </div>
+        </div>
+        <div class="video-container justify-center">
+          <iframe id="video" src="https://www.youtube.com/embed/qmDAIlEGO_Q">
+          </iframe>
+        </div>
+      </section>
+      <section id="order" class="flex justify-center align-center gap-1 md:col">
+        <div class="order-section md:w-100">
+          <header>Classical</header>
+          <section>
+            <br />
+            <h2>$500</h2>
+            <br />
+            Lorem ipsum. <br /><br />
+            Lorem ipsum.<br /><br />
+            Lorem ipsum dolor.<br /><br />
+            Lorem ipsum. <br />
+            <br />
+            <button class="button">SELECT</button>
+          </section>
+        </div>
+        <div class="order-section md:w-100">
+          <header>Classical 10 String</header>
+          <section>
+            <br />
+            <h2>$600</h2>
+            <br />
+            Lorem ipsum. <br /><br />
+            Lorem ipsum.<br /><br />
+            Lorem ipsum dolor.<br /><br />
+            Lorem ipsum. <br />
+            <br />
+            <button class="button">SELECT</button>
+          </section>
+        </div>
+        <div class="order-section md:w-100">
+          <header>Classical 12 String</header>
+          <section>
+            <br />
+            <h2>$700</h2>
+            <br />
+            Lorem ipsum. <br /><br />
+            Lorem ipsum.<br /><br />
+            Lorem ipsum dolor.<br /><br />
+            Lorem ipsum. <br />
+            <br />
+            <button class="button">SELECT</button>
+          </section>
+        </div>
+      </section>
+      <footer class="footer">
+        <ul class="flex justify-flex-end gap-1">
+          <li><a href="#" class="text-dark">Privacy</a></li>
+          <li><a href="#" class="text-dark">Terms</a></li>
+          <li><a href="#" class="text-dark">Contacts</a></li>
+        </ul>
+        <p>Copyright 2022, Garry's Guitars</p>
+      </footer>
+    </main>
+  </body>
+</html>
